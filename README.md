@@ -46,4 +46,7 @@ This application has used axios as its HTTP library
 
 Please refer to the below gif to see the workflow of the application
 
+![3urjey](https://user-images.githubusercontent.com/9131336/78019218-e989b600-736c-11ea-8bbf-efd5af50e7f8.gif)
+
+
 
