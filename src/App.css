@@ -1,10 +1,14 @@
 .App {
   text-align: center;
+  background-color: #eee;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.navbar{
+  background-color: black;
 }
 
 @media (prefers-reduced-motion: no-preference) {

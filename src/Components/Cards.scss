@@ -1,0 +1,39 @@
+.card {
+    padding: 1em;
+  }
+  
+  .card-body {
+    padding: 0.6em !important;
+  }
+  
+  .card-subtitle {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card-title {
+    display: flex;
+    justify-content: center;
+  
+    p:nth-child(1) {
+      padding-right: 5px;
+    }
+  }
+  
+  .card-subtitle {
+    p:nth-child(1) {
+      padding-right: 5px;
+    }
+  
+    margin-bottom: 10px !important;
+    font-size: 15px;
+  }
+  
+  .card-title {
+    margin-top: .75em;
+  }
+
+  .instruction_box {
+      padding: 2em;
+      margin: auto;
+  }

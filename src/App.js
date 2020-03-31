@@ -1,25 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
+import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import './App.css';
+import Cards from './Components/Cards'
+import Home from './Components/Home'
+import Calendar from './Components/Calendar'
+
+import { Container } from 'reactstrap';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+        <Router>
+          <nav className="navbar navbar-inverse">
+            <div className="container-fluid">
+              <div className="navbar-header">
+                <a className="navbar-brand" href="#"><Link to="/">Full Throttle Labs</Link></a>
+              </div>
+            </div>
+          </nav>
+          
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/users" component={Cards} />
+              <Route exact path="/activities" component={Calendar} />
+            </Switch>
+          </Router>
+
+      </div>
   );
 }
 
