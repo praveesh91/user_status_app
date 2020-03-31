@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import axios from 'axios'
 import {Row, Col, Card, CardImg, CardBody,CardTitle, CardSubtitle} from 'reactstrap';
 
-import Modal from './Modal'
+import Modal from '../Modal/Modal'
 
 import './Cards.scss'
 
@@ -19,7 +19,6 @@ class Cards extends Component {
         axios.get("https://praveesh91.github.io/test_json/userStatus.json")
             .then(res =>{
                 const data = res.data.members;
-                console.log(data)
                 this.setState({status:data})
             })
     }
@@ -35,7 +34,7 @@ class Cards extends Component {
                 <Row>
                 {this.state.status.map((data, key) => (
                     <Col md={3} key={key}>
-                        <Card>
+                        <Card style={{margin:'0.5em'}}>
                             <CardImg src={data.profile_image} alt="Card image cap" />
                             <CardBody>
                                 <CardTitle>

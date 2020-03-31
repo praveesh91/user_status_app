@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {Link,  BrowserRouter as Router} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Table } from 'reactstrap';
 
 const ModalExample = (props) => {
@@ -7,37 +7,6 @@ const ModalExample = (props) => {
     const [modal, setModal] = useState(false);
 
     const toggle = () => setModal(!modal);
-
-    // const tableBody = () =>{
-    //     // var dateString = 'Mon Jan 12 00:00:00 GMT 2015';
-    //     let dateString = new Date().toUTCString();
-    //     dateString = dateString.split(' ').slice(0, 4).join(' ');
-    //     // console.log(dateString);
-
-    //     {props.userData.map((data, index) => {
-    //         let myDate = new Date(data.start_time).toUTCString().split(' ').slice(0, 4).join(' ');
-    //         // console.log(myDate);
-    //         if (dateString === myDate) {
-    //             return( 
-    //                 <tr key={index}>
-    //                     <td>{data.start_time}</td>
-    //                     <td>{data.end_time}</td>
-    //                 </tr>
-    //             )
-    //           }
-    //         else{
-    //             return( 
-    //                 <tr key={index}>
-    //                     <td>{data.start_time}</td>
-    //                     <td>{data.end_time}</td>
-    //                 </tr>
-    //             )
-    //         }
-    //         // return(
-    //         //     dateString === myDate ? console.log("Yes"): console.log("No")
-    //         // )
-    //     })}
-    // }
 
     let dateString = new Date().toUTCString();
     dateString = dateString.split(' ').slice(0, 4).join(' ');
@@ -61,9 +30,10 @@ const ModalExample = (props) => {
                                 </tr>
                             </thead>
                             <tbody> 
+                                
                             {props.userData.map((data, index) => {
                                 let myDate = new Date(data.start).toUTCString().split(' ').slice(0, 4).join(' ');
-                                // console.log(myDate);
+                                console.log(props.userData)
                                 if (dateString === myDate) {
                                     return( 
                                         <tr key={index}>

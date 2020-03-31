@@ -7,7 +7,6 @@ import 'react-big-calendar/lib/css/react-big-calendar.css';
 import axios from 'axios'
 
 import "react-big-calendar/lib/css/react-big-calendar.css";
-// import './App.css';
 
 moment.locale('en-GB');
 BigCalendar.momentLocalizer(moment);
@@ -28,47 +27,22 @@ class Calendars extends Component {
     axios.get("https://praveesh91.github.io/test_json/userStatus.json")
         .then(res =>{
             const data = res.data.members;
-            // console.log("Total", data)
             data.map((events) =>{
-                this.setState({cal_events:events.activity_periods})
                 const valu = events.activity_periods
 
-                    this.setState({
-                        evtValues:this.state.evtValues.concat(valu)
-                    });
+                this.setState({
+                    evtValues:this.state.evtValues.concat(valu)
+                });
             })
             
         })
-        // const {statusData} = this.props.location.state;
-        // console.log("Data from modal is", statusData)
 
-}
+    }
 
 
   render() {
 
-
-    // const cal_events  = this.state.cal_events.map((evt) =>{
-    //     console.log("evt", evt)
-    //     return evt
-    // })
-    // const dummyEvents = [
-    //     {
-    //         start: 'Mar 29, 2020 18:00:00',
-    //         end: 'Mar 29, 2020 23:00:00',
-    //         title: 'hi',
-    //       },
-    //     {
-    //         start: 'Mar 19, 2020 18:00:00',
-    //         end: 'Mar 19, 2020 23:00:00',
-    //         title: 'hi',
-    //       }
-    // ]
-
-    // console.log("dummyEvents", dummyEvents)
-    const {cal_events} = this.state;
     const {evtValues} = this.state;
-    console.log("cal_events", evtValues)
 
     return (
       <Container>

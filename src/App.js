@@ -1,11 +1,9 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import './App.css';
-import Cards from './Components/Cards'
-import Home from './Components/Home'
-import Calendar from './Components/Calendar'
-
-import { Container } from 'reactstrap';
+import Cards from './Components/Cards/Cards'
+import Home from './Components/Home/Home'
+import Calendar from './Components/Calendar/Calendar'
 
 function App() {
   return (
@@ -14,7 +12,7 @@ function App() {
           <nav className="navbar navbar-inverse">
             <div className="container-fluid">
               <div className="navbar-header">
-                <a className="navbar-brand" href="#"><Link to="/">Full Throttle Labs</Link></a>
+                <Link to="/">Full Throttle Labs</Link>
               </div>
             </div>
           </nav>
