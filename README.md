@@ -48,8 +48,19 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 This application has used axios as its HTTP library
 
+
+
+###########################   REACT BIG CALENDAR    #############################
+
+This application has used react-big-calendar as it calendar library.
+
+
+###########################   MOMENTJS    #############################
+
+This application has used moment.js for formating the dates
+
 <<<<<<< HEAD
-Please refer to the below to see the workflow of the application
+
 
 =======
 
