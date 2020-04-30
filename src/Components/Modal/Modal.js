@@ -62,7 +62,7 @@ const ModalExample = (props) => {
                                 statusData:"Hey link data"
                             }
                         }}>
-                                <Button color="primary" onClick={toggle}> View History</Button></Link>
+                        <Button color="primary" onClick={toggle}> View History</Button></Link>
                         <Button color="danger" onClick={toggle}>Close</Button>
                    
                     </ModalFooter>
