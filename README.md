@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Please refer to the below gif to see the workflow of the application
+
+![3urjey](https://user-images.githubusercontent.com/9131336/78019218-e989b600-736c-11ea-8bbf-efd5af50e7f8.gif)
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -44,13 +48,22 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 This application has used axios as its HTTP library
 
+
+
+###########################   REACT BIG CALENDAR    #############################
+
+This application has used react-big-calendar as it calendar library.
+
+
+###########################   MOMENTJS    #############################
+
+This application has used moment.js for formating the dates
+
 <<<<<<< HEAD
-Please refer to the below to see the workflow of the application
+
 
 =======
-Please refer to the below gif to see the workflow of the application
 
-![3urjey](https://user-images.githubusercontent.com/9131336/78019218-e989b600-736c-11ea-8bbf-efd5af50e7f8.gif)
 
 
 
